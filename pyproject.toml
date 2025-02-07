@@ -32,7 +32,7 @@ toml-sort = "^0.24.0"
 
 [tool.ruff]
 line-length = 160
-target-version = "py311"
+target-version = "py39"
 
 [tool.ruff.lint]
 ignore = [
