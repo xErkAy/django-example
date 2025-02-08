@@ -1,13 +1,13 @@
-manage = poetry run python src/manage.py
+manage = python src/manage.py
 
 fmt:
-	poetry run ruff format src
-	poetry run toml-sort pyproject.toml
+	ruff format src
+	toml-sort pyproject.toml
 
 
 check:
-	poetry run ruff check src --fix --unsafe-fixes
-	poetry run mypy src
+	ruff check src --fix --unsafe-fixes
+	mypy src
 	$(manage) makemigrations --check --no-input --dry-run
 
 

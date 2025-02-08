@@ -2,7 +2,6 @@
 
 
 ## Project uses:
-* Poetry - a tool for dependency management and packaging (pip analogue)
 * Ruff - a Python linter
 * Mypy - a static type checker for Python
 ```
@@ -17,8 +16,13 @@ make lint - check & format your project
 ```
 git clone ...
 cd django-example
-pip install poetry==2.0.1
-poetry install
+```
+
+```
+pip install -r requirements.txt
+```
+
+```
 python src/manage.py migrate
 python src/manage.py runserver
 ```
