@@ -29,7 +29,7 @@ python src/manage.py runserver
 
 
 ###
-## Available paths:
+## Available paths
 ```
 /api/auth/
 /api/registration/
