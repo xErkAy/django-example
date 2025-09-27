@@ -2,8 +2,8 @@
 typecheck = ["mypy"]
 
 [tool.ruff]
-line-length = 160
-target-version = "py39"
+line-length = 120
+target-version = "py312"
 
 [tool.ruff.lint]
 ignore = [

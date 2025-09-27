@@ -10,7 +10,7 @@ from rest_framework.views import APIView
 from rest_framework_jwt.serializers import JSONWebTokenSerializer, RefreshJSONWebTokenSerializer, VerifyJSONWebTokenSerializer
 from rest_framework_jwt.settings import api_settings
 
-from core.views import jwt_response_payload_handler
+from core.authentication.jwt import jwt_response_payload_handler
 
 
 class JSONWebTokenAPIView(APIView):

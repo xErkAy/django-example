@@ -10,7 +10,7 @@ from apps.account.api.serializers import UserSerializer
 from apps.account.models import User
 from apps.authentication.exceptions import AuthenticationFailed
 from core.authentication.views import JSONWebTokenAPIView
-from core.views import jwt_encode_handler, jwt_payload_handler
+from core.authentication.jwt import jwt_encode_handler, jwt_payload_handler
 
 
 class AuthenticationAPIView(JSONWebTokenAPIView):
